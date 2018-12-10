@@ -1,0 +1,13 @@
+ru:
+  hello: "Привет Мир!"
+  new_meeting: "Создать новую встечу"
+  login: "Войти"
+  sign_up: "Зарегестрироваться"
+  dashboard: "Календарь"
+  users: "Пользователи"
+  sign_out: "Выйти"
+  welcome_to: "Добро пожаловать в"
+  calendar: "Календарь"
+  all_meetings: "Все Встречи"
+  meeting_calendar: "Календарь Встречь"
+  meetings: "Встречи"

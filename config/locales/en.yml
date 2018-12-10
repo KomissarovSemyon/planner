@@ -31,3 +31,14 @@
 
 en:
   hello: "Hello world"
+  new_meeting: "Schedule new session"
+  login: "Log in"
+  sign_up: "Sign up"
+  dashboard: "Dashboard"
+  users: "Users"
+  sign_out: "Sign out"
+  welcome_to: "Welcome to"
+  calendar: "Calendar"
+  all_meetings: "All Meetings"
+  meeting_calendar: "Meeting Calendar"
+  meetings: "Meetings"
