@@ -1,4 +1,14 @@
 ru:
+  devise:
+    sign-up: 'Регистрация'
+    name: "Имя"
+    email: 'Эл. Почта'
+    username: 'Логин'
+    password: 'Пароль'
+    password_confirmation: 'Подтверждение пароля'
+    min_chars: 'символов'
+    login: 'Войти'
+    remember_me: 'Запомнить'
   hello: "Привет Мир!"
   new_meeting: "Создать новую встечу"
   login: "Войти"
@@ -9,5 +19,20 @@ ru:
   welcome_to: "Добро пожаловать в"
   calendar: "Календарь"
   all_meetings: "Все Встречи"
-  meeting_calendar: "Календарь Встречь"
+  meeting_calendar: "Календарь встреч"
   meetings: "Встречи"
+  delete: "Удалить"
+  add_any_notes: "Добавьте заметки тут"
+  error_meeting_save: "не дают сохранить встречи:"
+  meeting_info: "Информация о встрече"
+  commented: "прокомментировал"
+  confirm: "Вы уверенны?"
+  no_session: "Похоже вы ещё не создали встречу"
+  cancel_meeting: "Отменит встречу"
+  edit_sessions: "Редактировать встречи"
+  choose_time: "Измените свои встречи выбрав время, которое для вас подходит, внизу."
+  choose_time_s: "Создайте новую встречу выбрав время, которое для вас подходит, внизу."
+  start_time: "Время начала: "
+  end_time: "Время окончания: "
+  comments: "Комментарии"
+  to_comment: "чтобы прокомментировать"

@@ -37,7 +37,7 @@
           </div>
         </div>
       </div>
-      <%= link_to 'Cancel Meeting', meeting, method: :delete, data: { confirm: "Are you sure? There are no refunds."}, class: "btn btn-destroy ml-4" if admin? %>
+      <%= link_to t(:cancel_meeting), meeting, method: :delete, data: { confirm: "Are you sure? There are no refunds."}, class: "btn btn-destroy ml-4" if admin? %>
     <% end %>
   </div>
 

@@ -12,7 +12,7 @@
           <%= readable_time(meeting.end_time) %>
         </div>
       </div>
-      <%= link_to 'Cancel Meeting', meeting, method: :delete, data: { confirm: 'Are you sure? There are no refunds' }, class: "btn btn-destroy ml-4" if admin? %>
+      <%= link_to t(:cancel_meeting), meeting, method: :delete, data: { confirm: t(:confirm) }, class: "btn btn-destroy ml-4" if admin? %>
     </div>
   <% end %>
 </div>

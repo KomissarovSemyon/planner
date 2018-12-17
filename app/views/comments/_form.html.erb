@@ -2,7 +2,7 @@
 
 <%= form_for([@meeting, @comment], remote: true) do |f| %>
   <div class="relative">
-    <%= f.hidden_field :reply, class: "input h-32 border border-grey-light resize-none", placeholder: "Add any notes or replies here" %>
+    <%= f.hidden_field :reply, class: "input h-32 border border-grey-light resize-none", placeholder: t(:add_any_notes) %>
 
     <trix-editor input="comment_reply" id="comment_reply_trix" class="h-32 p-4"></trix-editor>
 

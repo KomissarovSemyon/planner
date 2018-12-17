@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
@@ -7,14 +9,15 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :name])
-    devise_parameter_sanitizer.permit(:account_update, keys: [:username, :name])
+    devise_parameter_sanitizer.permit(:sign_up, keys: %i[username name])
+    devise_parameter_sanitizer.permit(:account_update, keys: %i[username name])
   end
 
   private
 
   def set_locale
-    I18n.locale = params[:locale] || I18n.default_locale
+    I18n.locale = params[:locale] || session[:locale] || I18n.default_locale
+    session[:locale] = I18n.locale
   end
 
   def default_url_options(options = {})

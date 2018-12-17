@@ -30,6 +30,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  devise:
+    sign-up: 'Sign Up'
+    name: 'Name'
+    email: 'Email'
+    username: 'Username'
+    password: 'Password'
+    password_confirmation: 'Password Confirmation'
+    min_chars: 'characters'
+    login: 'Log In'
+    remember_me: 'Remember me'
   hello: "Hello world"
   new_meeting: "Schedule new session"
   login: "Log in"
@@ -42,3 +52,18 @@ en:
   all_meetings: "All Meetings"
   meeting_calendar: "Meeting Calendar"
   meetings: "Meetings"
+  delete: "Delete"
+  add_any_notes: "Add any notes or replies here"
+  error_meeting_save: "prohibited this meeting from being saved:"
+  meeting_info: "Meeting Information"
+  commented: "commented"
+  confirm: "Are you sure?"
+  no_session: "It looks like you haven't scheduled a session yet"
+  cancel_meeting: "Cancel Meeting"
+  edit_sessions: "Edit sessions"
+  choose_time: "Modify your session by choosing the best time that works for you bellow."
+  choose_time_s: "Schedule a new session by choosing the best time that works for you bellow."
+  start_time: "Start time: "
+  end_time: "End time: "
+  comments: "Comments"
+  to_comment: "to comment."

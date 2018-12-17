@@ -3,7 +3,7 @@
     <div><h3 class="text-lg"><%= user.name %></h3><%= user.username %> <% if current_user %>(You)<% end %></div>
     <p>Joined on <%= readable_time(user.created_at) %></p>
   </div>
-  <%= link_to 'Delete User', users_path, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-destroy ml-4", id: "delete_user" if admin? %>
+  <%= link_to 'Delete User', users_path, method: :delete, data: { confirm: t(:confirm) }, class: "btn btn-destroy ml-4", id: "delete_user" if admin? %>
 </div>
 
 <% if user.meetings.any? %>

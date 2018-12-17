@@ -1,16 +1,18 @@
+# frozen_string_literal: true
+
 class MeetingsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_meeting, only: [:show, :edit, :update, :destroy]
+  before_action :set_meeting, only: %i[show edit update destroy]
   before_action :must_be_admin, only: [:active_sessions]
 
   # GET /meetings
   # GET /meetings.json
   def index
-    if current_user.admin?
-      @meetings = Meeting.all
-    else
-      @meetings = current_user.meetings.where(user_id: current_user)
-    end
+    @meetings = if current_user.admin?
+                  Meeting.all
+                else
+                  current_user.meetings.where(user_id: current_user)
+                end
   end
 
   # GET /meetings/1
@@ -25,8 +27,7 @@ class MeetingsController < ApplicationController
   end
 
   # GET /meetings/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /meetings
   # POST /meetings.json
@@ -71,17 +72,15 @@ class MeetingsController < ApplicationController
   end
 
   def active_sessions
-    @active_sessions = Meeting.where("end_time > ?", Time.now)
+    @active_sessions = Meeting.where('end_time > ?', Time.now)
   end
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_meeting
     @meeting = Meeting.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
   def meeting_params
     params.require(:meeting).permit(:name, :start_time, :end_time, :user_id)
   end
